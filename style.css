@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  flex-direction: column;
+}
+
+.evangelion-title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-stretch: condensed; /* Tenta usar uma versão condensada, se disponível */
+  transform: scaleX(0.79); /* Reduz a largura para 79% */
+  display: inline-block; /* Evita distorções inesperadas */
+}
+
+
+
+.first-line {
+  font-size: 7rem;
+  line-height: 5.5rem;
+}
+
+.second-line {
+  font-size: 11rem;
+  line-height: 9.5rem;
+}
+
+.episode-title {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  transform: scaleX(0.79); /* Reduz a largura para 79% */
+  font-stretch: condensed; /* Tenta usar uma versão condensada, se disponível */
+  font-size: 24px; /* Ajuste conforme necessário */
+  text-transform: uppercase;
+  color: white;
+}
+
+.third-line {
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.align-end-container{
+    text-align: end;
+}
+
+.forth-line {
+    font-size: 4rem;
+    line-height: 2.5rem;
+    width: 100%;
+}
+
+@media screen and (max-width:525px) {
+    .container {
+        width: 100vw;
+    }
+
+    .first-line {
+        font-size: 3.2rem;
+        line-height: 2.6rem;
+    }
+
+    .second-line {
+        font-size: 5rem;
+        line-height: 3.5rem;
+    }
+
+    .third-line {
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
+
+    .forth-line {
+        font-size: 2.5rem;
+        line-height: 1rem;
+        width: 100%;
+    }
+
+}
